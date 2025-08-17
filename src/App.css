@@ -32,7 +32,178 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.main {
+  height: 100vh;
+  background-image: url('../public/images/eyeglass-2589290_1280.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.main .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.main-text {
+  max-width: 500px;
+  padding-left: 1rem;
+}
+
+.main-text h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.main-text p {
+  font-weight: 300;
+  position: absolute;
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.fab {
+  font-size: 1.2rem;
+}
+
+.push-content {
+  transition: transform 0.4s ease;
+}
+
+body.nav-open .push-content {
+  transform: translateY(240px);
+}
+
+.card {
+  border: none;
+  background-color: #fff;
+}
+
+.form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pattern-bg {
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  background-size: cover;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+.card .btn-primary {
+  background-color: #333;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.card .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.about {
+  background-image: url('../public/images/elephantglasses.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 70vh;
+}
+
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.about .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+.about-text {
+  max-width: 500px;
+  padding-left: 1rem;
+}
+
+.about-text h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  font-weight: 300;
+  position: absolute;
+}
+
+.shop {
+  background-color: #ddd;
+}
+
+.h1,
+h1 {
+  font-size: calc(4.375rem + 1.5vw);
+}
+
+footer {
+  background-color: #ddd;
 }
